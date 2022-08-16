@@ -13,7 +13,12 @@ function play(question, answer) {
 var arr = [
   { question: "Where do I live? ", answer: "Bengaluru" },
   { question: "Where did I complete my engineering ?", answer: "JSSATE" },
+  {
+    question: "Which branch did I choose in engineering ?",
+    answer: "Electonics and Communications",
+  },
   { question: "Where do I work ?", answer: "L & T Technology Services" },
+  { question: "In which locality do I stay? ", answer: "AGS Layout" },
 ];
 
 for (var i = 0; i < arr.length; i++) {
