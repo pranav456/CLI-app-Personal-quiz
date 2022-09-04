@@ -5,20 +5,20 @@ console.log("NAMASTE! " + userAnswer);
 var score = 0;
 function play(question, answer) {
   var userAnswer = readlinesync.question(question);
-  if (userAnswer === answer) {
+  if (userAnswer.toLocaleLowerCase() === answer) {
     console.log("You got it right!");
     score = score + 1;
   } else console.log("You got it wrong");
 }
 var arr = [
-  { question: "Where do I live? ", answer: "Bengaluru" },
-  { question: "Where did I complete my engineering ?", answer: "JSSATE" },
+  { question: "Where do I live? ", answer: "bengaluru" },
+  { question: "In which locality do I stay? ", answer: "ags layout" },
+  { question: "Where did I complete my engineering ?", answer: "jssate" },
   {
-    question: "Which branch did I choose in engineering ?",
-    answer: "Electonics and Communications",
+    question: "What do I like to eat?",
+    answer: "dosa",
   },
-  { question: "Where do I work ?", answer: "L & T Technology Services" },
-  { question: "In which locality do I stay? ", answer: "AGS Layout" },
+  { question: "Where do I work ?", answer: "l & t Technology services" },
 ];
 
 for (var i = 0; i < arr.length; i++) {
